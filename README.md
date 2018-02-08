@@ -11,12 +11,12 @@ custom eslint rule for egg RTFM questions
 
 [npm-image]: https://img.shields.io/npm/v/eslint-plugin-eggache.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/eslint-plugin-eggache
-[travis-image]: https://img.shields.io/travis/{{org}}/eslint-plugin-eggache.svg?style=flat-square
-[travis-url]: https://travis-ci.org/{{org}}/eslint-plugin-eggache
-[codecov-image]: https://codecov.io/gh/{{org}}/eslint-plugin-eggache/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/{{org}}/eslint-plugin-eggache
-[david-image]: https://img.shields.io/david/{{org}}/eslint-plugin-eggache.svg?style=flat-square
-[david-url]: https://david-dm.org/{{org}}/eslint-plugin-eggache
+[travis-image]: https://img.shields.io/travis/eggjs/eslint-plugin-eggache.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/eslint-plugin-eggache
+[codecov-image]: https://codecov.io/gh/eggjs/eslint-plugin-eggache/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/eggjs/eslint-plugin-eggache
+[david-image]: https://img.shields.io/david/eggjs/eslint-plugin-eggache.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/eslint-plugin-eggache
 [snyk-image]: https://snyk.io/test/npm/eslint-plugin-eggache/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/eslint-plugin-eggache
 [download-image]: https://img.shields.io/npm/dm/eslint-plugin-eggache.svg?style=flat-square
