@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "custom eslint rule for egg RTFM questions",
   "dependencies": {
-    "is-type-of": "^1.2.0"
+
   },
   "devDependencies": {
-    "autod": "^2.8.0",
-    "egg-bin": "^3.4.0",
-    "egg-ci": "^1.7.0",
+    "autod": "^3.0.1",
+    "egg-bin": "^4.3.7",
+    "egg-ci": "^1.8.0",
     "eslint": "^4.17.0",
-    "eslint-config-egg": "^4.2.0",
+    "eslint-config-egg": "^6.0.0",
+    "is-type-of": "^1.2.0",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -33,7 +34,8 @@
     "url": ""
   },
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "author": "TZ <atian25@qq.com>",
   "license": "MIT"
