@@ -24,7 +24,6 @@ defineTest('no-override-exports', {
       `,
       // don't check not config files
       filename: '/app_root/app.js',
-      options: [ ],
     },
   ],
 
@@ -34,21 +33,21 @@ defineTest('no-override-exports', {
         exports.view = '';
         module.exports = {};
       `,
-      errors: [{ messageId: 'moduleAfterExports' }],
+      errors: [{ messageId: 'overrideExports' }],
     },
     {
       code: `
         module.exports = {};
         exports.view = '';
       `,
-      errors: [{ messageId: 'exportsAfterModule' }],
+      errors: [{ messageId: 'overrideExports' }],
     },
     {
       code: `
         module.exports = {};
         module.exports.view = '';
       `,
-      errors: [{ messageId: 'repeatModule' }],
+      errors: [{ messageId: 'overrideModule' }],
     },
     {
       code: `
@@ -58,7 +57,7 @@ defineTest('no-override-exports', {
       // check all files
       filename: '/app_root/app.js',
       options: [ true ],
-      errors: [{ messageId: 'exportsAfterModule' }],
+      errors: [{ messageId: 'overrideExports' }],
     },
   ],
 });

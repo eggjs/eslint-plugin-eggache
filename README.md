@@ -32,7 +32,7 @@ npm i eslint-plugin-eggache --save
 
 ### no-override-exports
 
-A common mistake that newbee will make - override `module.exports` and `exports`.
+A common mistake that newbie will make - override `module.exports` and `exports`.
 
 ```js
 /* eslint eggache/no-override-exports: [ 'error' ] */
@@ -62,4 +62,25 @@ set it to `true` means to check all files.
 // ${app_root}/app.js
 module.exports = exports = {};
 exports.keys = '123456';
+```
+
+### no-unexpected-plugin-keys
+
+Sometimes, developer will confuse `plugin.js` and `config.default.js`.
+
+`plugin.js` only allow `[ 'enable', 'package', 'path', 'env' ]` and it control whether to load a plugin.
+
+The plugin's `config` should write to `config/config.{env}.js`.
+
+```js
+/* eslint eggache/no-unexpected-plugin-keys: [ 'error' ] */
+
+// config/plugin.js
+module.exports = {
+  test: {
+    enable: true,
+    package: 'egg-test',
+    someConfig: 'should not place here',
+  },
+}
 ```
