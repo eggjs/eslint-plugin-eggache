@@ -28,6 +28,32 @@ custom eslint rule for egg RTFM questions
 npm i eslint-plugin-eggache --save
 ```
 
+Add `eggache` to the plugins section of your `.eslintrc` configuration file.
+
+```js
+// ${app_root}/.eslintrc
+{
+  "extends": [
+    "plugin:eggache/recommended"
+  ]
+}
+```
+
+By default it enable all the recommended rules, if you want to custom, just configure the rules section.
+
+```js
+// ${app_root}/.eslintrc
+{
+  "extends": [
+    "plugin:eggache/recommended"
+  ],
+  "rules": {
+    'eggache/no-override-exports': [ 'error' ],
+    'eggache/no-unexpected-plugin-keys': 'error',
+  }
+}
+```
+
 ## Rules
 
 ### no-override-exports
