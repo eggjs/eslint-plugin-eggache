@@ -1,9 +1,8 @@
 {
   "name": "eslint-plugin-eggache",
   "version": "1.0.0",
-  "description": "custom eslint rule for egg RTFM questions",
+  "description": "custom eslint rule for egg RTFM issues",
   "dependencies": {
-
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -31,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:eggjs/eslint-plugin-eggache.git"
   },
   "files": [
     "index.js",

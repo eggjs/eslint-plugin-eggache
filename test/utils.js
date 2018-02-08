@@ -2,7 +2,7 @@
 
 const is = require('is-type-of');
 const RuleTester = require('eslint').RuleTester;
-const ruleTester = new RuleTester();
+const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 
 exports.defineTest = (ruleName, fixtures) => {
   const rule = require(`../lib/rules/${ruleName}`);
@@ -19,7 +19,5 @@ function normalizeFixture(input) {
       code: input,
     };
   }
-  // input.
-  input.parserOptions = Object.assign({ ecmaVersion: 6 }, input.parserOptions);
   return input;
 }
