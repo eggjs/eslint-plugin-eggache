@@ -8,10 +8,18 @@ module.exports = {
   configs: {
     recommended: {
       plugins: [ 'eggache' ],
-      rules: {
-        'eggache/no-override-exports': 'error',
-        'eggache/no-unexpected-plugin-keys': 'error',
+      parserOptions: {
+        ecmaVersion: 6,
       },
+      overrides: [
+        {
+          files: [ 'config/config.*.js', 'config/plugin.*.js', 'config/plugin.js' ],
+          rules: {
+            'eggache/no-override-exports': 'error',
+            'eggache/no-unexpected-plugin-keys': 'error',
+          },
+        },
+      ],
     },
   },
 };
