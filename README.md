@@ -110,3 +110,16 @@ module.exports = {
   },
 }
 ```
+
+### no-only-tests
+
+A common mistake that developer will make - forget to remove `.only` in tests before committing.
+
+```js
+/* eslint eggache/no-only-tests: [ 'error' ] */
+describe.only('desc something', function() {
+  it.only('assert somnething', function() {
+    // do nothing
+  });
+})
+```
