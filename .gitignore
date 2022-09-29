@@ -7,3 +7,5 @@ run/
 .DS_Store
 *.swp
 .vscode
+*-lock.json
+*-lock.yaml
