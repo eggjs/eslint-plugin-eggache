@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-eggache",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "custom eslint rule for egg RTFM issues",
   "dependencies": {},
   "devDependencies": {
