@@ -2,31 +2,25 @@
   "name": "eslint-plugin-eggache",
   "version": "1.0.0",
   "description": "custom eslint rule for egg RTFM issues",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "autod": "^3.0.1",
-    "egg-bin": "^4.3.7",
-    "egg-ci": "^1.8.0",
-    "eslint": "^4.17.0",
-    "eslint-config-egg": "^6.0.0",
-    "is-type-of": "^1.2.0",
-    "webstorm-disable-index": "^1.2.0"
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=14.17.0"
   },
   "scripts": {
-    "autod": "autod",
     "lint": "eslint .",
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test",
+    "test": "egg-bin test",
     "cov": "egg-bin cov",
-    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
-    "pkgfiles": "egg-bin pkgfiles"
+    "ci": "npm run lint && npm run cov"
   },
   "ci": {
-    "version": "6, 8"
+    "version": "14, 16, 18",
+    "type": "github"
   },
   "repository": {
     "type": "git",

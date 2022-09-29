@@ -1,6 +1,5 @@
 'use strict';
 
-const is = require('is-type-of');
 const RuleTester = require('eslint').RuleTester;
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
 
@@ -14,7 +13,7 @@ exports.defineTest = (ruleName, fixtures) => {
 };
 
 function normalizeFixture(input) {
-  if (is.string(input)) {
+  if (typeof input === 'string') {
     input = {
       code: input,
     };
