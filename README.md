@@ -2,6 +2,8 @@
 
 custom eslint rule for egg RTFM questions
 
+Compatible with both **ESLint** and **[oxlint](https://oxc.rs/)** (oxlint JS plugins support).
+
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
@@ -23,6 +25,8 @@ custom eslint rule for egg RTFM questions
 [download-url]: https://npmjs.org/package/eslint-plugin-eggache
 
 ## Usage
+
+### With ESLint
 
 ```bash
 npm i eslint-plugin-eggache --save
@@ -51,6 +55,35 @@ By default it enable all the recommended rules, if you want to custom, just conf
     'eggache/no-override-exports': [ 'error' ],
     'eggache/no-unexpected-plugin-keys': 'error',
   }
+}
+```
+
+### With oxlint
+
+This plugin is compatible with [oxlint](https://oxc.rs/) (requires oxlint with JavaScript plugin support).
+
+```bash
+npm i eslint-plugin-eggache --save-dev
+```
+
+Add the plugin to your oxlint configuration:
+
+```json
+{
+  "plugins": ["eggache"],
+  "rules": {
+    "eggache/no-only-tests": "warn",
+    "eggache/no-override-exports": "error",
+    "eggache/no-unexpected-plugin-keys": "error"
+  }
+}
+```
+
+Or use the recommended config:
+
+```json
+{
+  "extends": ["plugin:eggache/recommended"]
 }
 ```
 

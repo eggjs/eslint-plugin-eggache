@@ -1,7 +1,15 @@
 {
   "name": "eslint-plugin-eggache",
   "version": "2.0.0",
-  "description": "custom eslint rule for egg RTFM issues",
+  "description": "custom eslint rule for egg RTFM issues, compatible with ESLint and oxlint",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "oxlint",
+    "eggjs",
+    "egg"
+  ],
   "dependencies": {},
   "devDependencies": {
     "egg-bin": "^5",
