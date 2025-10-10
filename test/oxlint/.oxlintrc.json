@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": ["eslint-plugin-eggache"],
+  "rules": {
+    "eggache/no-only-tests": "warn",
+    "eggache/no-override-exports": "error",
+    "eggache/no-unexpected-plugin-keys": "error"
+  }
+}

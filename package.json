@@ -1,13 +1,21 @@
 {
   "name": "eslint-plugin-eggache",
   "version": "2.0.0",
-  "description": "custom eslint rule for egg RTFM issues",
-  "dependencies": {},
+  "description": "custom eslint rule for egg RTFM issues, compatible with ESLint and oxlint",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "oxlint",
+    "eggjs",
+    "egg"
+  ],
   "devDependencies": {
     "egg-bin": "^5",
     "egg-ci": "^2",
     "eslint": "^8",
-    "eslint-config-egg": "^12"
+    "eslint-config-egg": "^12",
+    "oxlint": "^1.22.0"
   },
   "engines": {
     "node": ">=14.17.0"
@@ -15,6 +23,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "egg-bin test",
+    "test:oxlint": "oxlint --version && echo 'Oxlint tests are in test/oxlint/ - see test/oxlint/README.md for manual testing instructions'",
     "cov": "egg-bin cov",
     "ci": "npm run lint && npm run cov"
   },
